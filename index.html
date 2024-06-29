@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Upadhyaya's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            border-bottom: #0077B5 3px solid;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        header li {
+            margin: 0 10px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 1000;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        header nav {
+            float: right;
+        }
+        .button {
+            display: inline-block;
+            padding: 5px 20px;
+            background: linear-gradient(135deg, #0077B5, #005582);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 700;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, transform 0.3s;
+            height: 40px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button:hover {
+            background: linear-gradient(135deg, #005582, #003B57);
+            transform: translateY(-3px);
+        }
+        #showcase {
+            min-height: 200px;
+            background: #0077B5;
+            color: #fff;
+            text-align: center;
+            padding: 60px 0;
+            position: relative;
+        }
+        #showcase h1 {
+            margin-top: 50px;
+            font-size: 45px;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+        .animation-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .animation-background div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            animation: move 10s infinite;
+        }
+        @keyframes move {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(500px) rotate(180deg); }
+            100% { transform: translateY(0) rotate(360deg); }
+        }
+        .animation-background div:nth-child(odd) {
+            animation-duration: 15s;
+        }
+        section {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #0077B5;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        a.button[href*="#"]:hover {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Aryan Upadhyaya</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="button">About Me</a></li>
+                    <li><a href="Resume-AryanUpadhyaya.pdf" target="_blank" class="button">Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/aryan-upadhyaya/" target="_blank" class="button">Visit my LinkedIn Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="animation-background">
+            <div style="top: 10%; left: 20%;"></div>
+            <div style="top: 20%; left: 40%;"></div>
+            <div style="top: 30%; left: 60%;"></div>
+            <div style="top: 40%; left: 80%;"></div>
+            <div style="top: 50%; left: 20%;"></div>
+        </div>
+        <div class="container">
+            <h1>Hi, My name is Aryan</h1>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>With a strong foundation in engineering, mathematics, physics, economics, and business from Vista Del Lago High School and Folsom Lake College, coupled with practical experience at Jetson as a Summer Intern and Steve Miklos Aquatic Center as a Recreational Specialist, I bring a wealth of skills and expertise to the table. At Jetson, I contributed to QA testing, new feature development, and product strategy, resulting in significant improvements in app performance and user engagement. Additionally, my leadership in SkillsUSA and experience as an independent Math Tutor have further honed my problem-solving abilities and interpersonal skills. Proficient in Python, JavaScript, CAD Design, and more, I am committed to delivering excellence and making a meaningful impact in any role or project I undertake.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <embed src="Resume-AryanUpadhyaya.pdf" type="application/pdf" width="100%" height="800px" />
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aryan Upadhyaya. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('a[href="#about"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Remove the popup and related content
+        var popup = document.getElementById('popup');
+        if (popup) {
+            popup.remove();
+        }
+    </script>
+</body>
+</html>
